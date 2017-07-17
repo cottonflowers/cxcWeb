@@ -13,10 +13,9 @@ public class UserServiceTest extends SpringTestCase {
     Logger logger = Logger.getLogger(UserServiceTest.class);  
       
     @Test  
-    public void selectUserByIdTest(){  
-        User user = userService.getUserById(10);  
+    public void getUserByIdTest(){  
+        User user = userService.getUserById(1);  
         logger.debug("²éÕÒ½á¹û" + user);  
     }  
       
-  
-}  
+}

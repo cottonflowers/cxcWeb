@@ -2,10 +2,10 @@ package com.huawei.domain;
 
 public class User {
 	private int userId;
-	private char[] userPassword;
-	private char[] userName;
-	private char[] userTel;
-	private char[] userEmail;
+	private String userPassword;
+	private String userName;
+	private String userTel;
+	private String userEmail;
 	
 	public User(){}
 	public User(User user) {
@@ -21,30 +21,22 @@ public class User {
 	public void setUserId(int userId) {
 		this.userId = userId;
 	}
-	public char[] getuserPassword() {
+	public String getUserPassword() {
 		return userPassword;
 	}
-	public void setuserPassword(char[] userPassword) {
+	public void setUserPassword(String userPassword) {
 		this.userPassword = userPassword;
 	}
-	public char[] getUserName() {
-		return userName;
-	}
-	public void setUserName(char[] userName) {
+	public void setUserName(String userName) {
 		this.userName = userName;
 	}
-	public char[] getUserTel() {
-		return userTel;
-	}
-	public void setUserTel(char[] userTel) {
+	public void setUserTel(String userTel) {
 		this.userTel = userTel;
 	}
-	public char[] getUserEmail() {
-		return userEmail;
-	}
-	public void setUserEmail(char[] userEmail) {
+	public void setUserEmail(String userEmail) {
 		this.userEmail = userEmail;
 	}
+	
 	@Override
 	public String toString(){
 		return String.valueOf(userId) + "," + userName.toString() + "," + userPassword.toString() + ","

@@ -14,7 +14,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * @since 2015年9月28日
  */
 // 指定bean注入的配置文件
-@ContextConfiguration(locations = { "classpath:application.xml" })
+@ContextConfiguration(locations = { "classpath:application-config.xml" })
 // 使用标准的JUnit @RunWith注释来告诉JUnit使用Spring TestRunner
 @RunWith(SpringJUnit4ClassRunner.class)
 public abstract class SpringTestCase extends AbstractJUnit4SpringContextTests {
