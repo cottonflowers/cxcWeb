@@ -39,7 +39,7 @@ public class User {
 	
 	@Override
 	public String toString(){
-		return String.valueOf(userId) + "," + userName.toString() + "," + userPassword.toString() + ","
-				+  userTel.toString() + "," +userEmail.toString();
+		return String.valueOf(userId) + "," + userName + "," + userPassword + ","
+				+  userTel + "," +userEmail;
 	}
 }
